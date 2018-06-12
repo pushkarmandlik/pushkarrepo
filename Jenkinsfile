@@ -19,8 +19,8 @@ stage ('archive') {
 
 stage ('deploy') {
 	bat 'sh \'\'\'cp target/Helloworldwebapp.war /opt/apache-tomcat-8.5.21/webapps'
-	/opt/apache-tomcat-8.5.21/bin/shutdown.sh
-	/opt/apache-tomcat-8.5.21/bin/startup.sh'''
+	bat '/opt/apache-tomcat-8.5.21/bin/shutdown.sh'
+	bat '/opt/apache-tomcat-8.5.21/bin/startup.sh\'\'\''
 	}
 
 }
