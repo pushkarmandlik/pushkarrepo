@@ -10,7 +10,7 @@ stage ('SCM_checkout') {
 	}
 
 stage ('Build') {
-	sh 'mvn clean package'
+	bat 'mvn clean package'
 	}
 
 stage ('archive') {
